@@ -1,4 +1,4 @@
-public class Loro extends Pajaro {
+public class Loro extends Pajaro implements Mascota, AnimalDeCirco {
     private String idioma, raza;
 
     public Loro(String nombre, String colorPlumaje, String idioma, String raza) {
@@ -26,6 +26,26 @@ public class Loro extends Pajaro {
     @Override
     public void cantar() {
         System.out.println("Quiero krippy!!!");
+    }
+
+    @Override
+    public String getDueño() {
+        return "Doctor chapatín";
+    }
+
+    @Override
+    public String getFechaDeVacunacion() {
+        return "01/01/2025";
+    }
+
+    @Override
+    public void hacerTruco() {
+        System.out.println("Se despluma sensualmente");;
+    }
+
+    @Override
+    public void despedirse() {
+        System.out.println("Sanababiche guatafac, abranse culos que llegó la verga");;
     }
 
     
